@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.nav {
+  width: 100%;
+  background-color: #838181;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border:2px solid #000;
+  box-shadow: 20px black;
+
+}
+
+.nav img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.nav span {
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form--input, .form--button {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form--button {
+  background-color: rgb(42, 40, 40);
+  color: white;
+  border: none;
+  cursor: pointer;
+  grid-column: 1 / -1;
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.meme--image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 100%;
+  padding: 0 10px;
+  font-family: impact, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.meme--text.top {
+  top: 10px;
+}
+
+.meme--text.bottom {
+  bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px;
+  }
+
+  .nav img {
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .nav span {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .form {
+    gap: 10px;
+  }
+
+  .form--input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .form--button {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .meme--text {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    grid-template: 1fr 1fr / 1fr;
+    gap: 10px;
+  }
+
+  .form--input, .form--button {
+    width: 100%;
+  }
+
+  .meme--text {
+    font-size: 1.25em;
+    padding: 10px 10px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form--input, .form--button {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form--button {
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.meme {
+  /* position: relative; */
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.meme--image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.meme--text {
+  position: absolute;
+  width: auto;
+  max-width: 100%;
+  padding: 0 10px;
+  font-family: impact, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.meme--text.top {
+  top: 10px;
+}
+
+.meme--text.bottom {
+  bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+   
+  }
+
+  .form--button {
+    grid-column: span 2;
+  }
+}
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 50px;
+
+
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 50%;
+}
