@@ -1,7 +1,13 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+</head>
 <body>
     <h1>Meme Generator</h1>
-
+  
     <h2>Technologies Used:</h2>
     <ul>
         <li>React.js</li>
@@ -18,4 +24,5 @@
     <h2>Live Demo:</h2>
     <p><a href="#">Click here</a> to see the live demo.</p>
     <p>Feel free to contribute or suggest improvements!</p>
-
+</body>
+</html>
